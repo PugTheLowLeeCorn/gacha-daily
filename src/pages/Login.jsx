@@ -77,7 +77,7 @@ export default function Login() {
 
               <div className="relative -mt-2 flex h-[165px] items-center justify-center">
                 <img
-                  src="/doro.gif"
+                  src={`${import.meta.env.BASE_URL}doro.gif`}
                   alt="Doro"
                   className="h-[165px] w-auto object-contain drop-shadow-[0_12px_30px_rgba(0,0,0,0.45)]"
                 />
