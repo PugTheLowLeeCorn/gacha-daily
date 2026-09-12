@@ -15,7 +15,7 @@ dist-ssr
 .env.*
 !.env.example
 serviceAccount*.json
-functions/.env
+apps-script/.clasp.json
 
 # Editor directories and files
 .vscode/*

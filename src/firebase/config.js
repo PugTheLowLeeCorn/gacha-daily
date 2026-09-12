@@ -1,7 +1,6 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
-import { getFunctions } from 'firebase/functions'
 
 export function getFirebaseConfig() {
   return {
@@ -22,7 +21,6 @@ export function isFirebaseConfigured() {
 let app
 let auth
 let db
-let functions
 let googleProvider
 
 export function getFirebaseApp() {
@@ -47,13 +45,6 @@ export function getDb() {
     db = getFirestore(getFirebaseApp())
   }
   return db
-}
-
-export function getFirebaseFunctions() {
-  if (!functions) {
-    functions = getFunctions(getFirebaseApp(), import.meta.env.VITE_FIREBASE_FUNCTIONS_REGION || 'us-central1')
-  }
-  return functions
 }
 
 export function getGoogleProvider() {

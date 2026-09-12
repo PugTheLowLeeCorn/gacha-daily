@@ -45,7 +45,7 @@ export default function GameSelector({
             description={
               query.trim()
                 ? 'Try a different title or spelling.'
-                : 'Type a title. Results come from RAWG through Cloud Functions and the Firestore catalog.'
+                : 'Type a title. Results come from the Firestore game catalog.'
             }
           />
         ) : null}

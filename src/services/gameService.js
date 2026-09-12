@@ -103,7 +103,6 @@ export async function importGame(normalizedGame) {
   }
 
   throw new Error(
-    'Importing new games from RAWG requires Firebase Cloud Functions. ' +
-    'The current project is running in Spark mode.',
+    'This game is not in the Firestore catalog yet. Add it under games/{gameId} first.',
   )
 }
